@@ -48,9 +48,9 @@ ul > li:hover > a{
 .menu a {
     color: rgb(113, 113, 113);
 }
- 
+
 /* Submenu */
- 
+
 ul li ul{
 	position: absolute;
     top: 73px;
@@ -165,24 +165,24 @@ a {
     height: 300px;
     width: 80%;
     margin: 20px auto;
-  }
-  .overlay1 {
+}
+.overlay1 {
     background: url(../img/web.JPG) no-repeat 0 0/cover;
-  }
-  .overlay2 {
+}
+.overlay2 {
     background: url(../img/information.JPG) no-repeat 0 0/cover;
-  }
-  .overlay3 {
+}
+.overlay3 {
     background: url(../img/software.JPG) no-repeat 0 0/cover;
-  }
-  .overlay4 {
+}
+.overlay4 {
     background: url(../img/hardware.JPG) no-repeat 0 0/cover;
-  }
+}
 section a {
-      z-index: 1;
-      font-size: 18px;
-      font-weight: bold;
-      color: #FFF;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
     }
 .box:hover::after {
     content: "";
@@ -227,3 +227,59 @@ footer {
 footer p {
     margin-right: 30px;
 }
+
+@media screen and (max-width:700px){
+    /* ハンバーガーやりたい */
+    main button {
+        margin: 0px 10px;
+    }
+    .menu {
+        width: 28px;
+        height: 30px;
+        margin: 30px auto 10px;
+        cursor: pointer;
+    }
+    .menu span,.menu span::before,
+    .menu span::after {
+        background-color:gray;
+        width: 100%;
+        height: 5px;
+        border-radius: 2px;
+        display: block; 
+        position: relative;
+        transition: 1s;
+    
+    }
+    
+    .menu span::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: -9px;
+    }
+    .menu span::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+    }
+    /* ハンバーガーここまで */
+    
+    section ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    section li {
+        width: 100%;
+    }
+    .contants h1 {
+        width: 100%;
+    }
+    .contants h2 {
+        width: 80%;
+    }
+    
+
+
+} 
